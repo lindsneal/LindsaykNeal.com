@@ -1,0 +1,975 @@
+@charset 'UTF-8';
+
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:600);
+@import url(https://fonts.googleapis.com/css?family=News+Cycle);
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@font-face {
+    font-family: jenniferLynn;
+    src: url(../fonts/JenniferLynneBold.ttf);
+}
+
+body{
+/*background-color: #333;*/
+	background-image: url(../img/footer_lodyas.png);
+	color: #2c2c2e;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 1em;
+	line-height: 16px;
+}
+a{
+color: #666;
+text-decoration: none;
+}
+a:hover{
+color: #000;
+text-decoration: none;
+}
+a:-webkit-any-link :hover{
+text-decoration: none;
+}
+p.textBody {
+	color: #2c2c2e;
+	font-family: 'News Cycle', sans-serif;
+	font-size:1.8em;
+	line-height: 1.2;
+	text-align: justify;
+    padding-left: 0;
+    padding-right: 0;
+	padding-top:1%;
+}
+p.p1{
+padding-top:5%;
+}
+p.textQuote {
+	color: #2c2c2e;
+	font-family: 'News Cycle', sans-serif;
+	font-size:1.8em;
+	line-height: 1.2;
+	text-align: justify;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top:1%;
+	font-style: italic;
+	text-align:center;
+	color:#fff;
+}
+.quoteBox{
+	width:60%;
+	margin: 0 auto;
+	background-color: #FFBC09;
+	padding-bottom:5%;
+	margin-top:5%;
+}
+h1.quoteBoxHeader{
+	font-size:2.7em;
+	color:#fff;
+	text-align: center;
+	font-family: 'Gill Sans MT';
+	font-weight: bold;
+	padding-top:5%;
+	padding-bottom:2%;
+}
+span.authorQuote{
+	font-size:.8em;
+	font-style: normal;
+	font-weight: bold;
+}
+.wrapper{
+max-width: 1200px;
+background: #fff;
+z-index: 20;
+position: relative;
+margin: 0 auto;
+top:30px
+	}
+
+#header{
+background: #000;
+width: 100%;
+height: 160px;
+}
+	
+
+h1.logoText{
+	text-align: center;
+	top: 40px;
+	color: #ffffff;
+	font-family: 'jenniferLynn';
+	font-size: 8em;
+	position: relative;
+}
+
+.sideNavbarBox{
+	width:100%;
+	background: #ffffff;
+	height:100px;
+	float:right;
+
+}
+
+.sideNavbar li{
+	list-style-type: none;
+	margin-top: -10px;
+	}
+
+
+.sideNavbar a:link, .sideNavbar a:visited {
+	float: right;
+	font-size:1.8em;
+    color: #000;
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+}
+.sideNavbar a:visited {
+	 color: #000;
+}
+.sideNavbar li a:hover {
+	 color: #ffffff;
+	 background-color: #000;
+	 padding:10px;
+}
+
+.container{ 
+	padding:0;
+	margin-top: 6%;
+}
+.col-md-6{
+	padding-top: 2%;
+}
+#homeSlide{
+	margin: 0px auto;
+width: 95%;
+margin-top: 9%;
+}
+#homeSlide img{
+	margin: 0 auto;
+}
+img.small{
+	display: none;
+}
+.col-md-4{
+	padding-left:0;
+	padding-right:0;
+}
+.webSection, .designSection, .planningSection{
+font-family: 'Gill Sans MT';
+text-align: center;
+font-size: 5em;
+color: #fff;
+padding-bottom: 8%;
+text-transform: uppercase;
+padding-top: 8%;
+font-weight: bold;
+background-color: #000;
+}
+
+#sectionWeb{
+width: 100%;
+margin-top: 6%;
+overflow: auto;
+}
+#sectionWeb2{
+	width:100%;
+	overflow: auto;
+}
+#sectionWeb3{
+	width:100%;
+	margin-top: 3%;
+	overflow: auto;
+}
+#sectionWeb4{
+	width:100%;
+	margin-top: 3%;
+	overflow: auto;
+}
+/*
+.webProject img{
+	margin:0 auto;
+}*/
+
+.projectText p{
+	text-align: center;
+	font-size: 3em;
+	color: #000;
+}
+.projectText{
+	width:300px;
+	margin: 0 auto;
+		margin-top: 100px;
+	position: absolute;
+	display:none;
+}
+.containerInner{
+	padding:0;
+
+}
+.portfolio_container{
+	width:100%;
+	background: #ffffff;
+	padding-top:5%;
+	padding-bottom: 20%;
+	overflow: hidden;
+}
+.design{
+	padding-top:0;
+}
+.designImg{
+width:100%;
+margin: 0 auto;
+padding-top:-5%;
+
+}
+.homeImg{
+float:left;
+width:55%;
+border: solid 5px #EAD8AD;
+border-style:double;
+border-color: #000;
+margin-left: 5%;
+}
+.projectInfo{
+width: 37%;
+float:right;
+}
+.projectInfo h1{
+font-family: 'Gill Sans MT';
+color: #fff;
+font-size: 3.4em;
+font-weight: bold;
+background-color: #000;
+padding: 4%;
+}
+.projectInfo p{
+padding-right: 8%;
+padding-top: 8%;
+padding-left: 5%;
+font-size: 1.65em;
+font-family: 'News Cycle', sans-serif;
+color: #000;
+line-height: 1.5;
+}
+.projectInfo p.info {
+font-size: 1.5em;
+}
+.imageContainer2{
+display: block;
+clear: both;
+width: 100%;
+padding-top: 5%;
+}
+.Illustrator.imagebox{
+width: 38%;
+float: left;
+margin-left: 3%;
+margin-top: 5%;
+
+}
+.Illustrator.imagebox2{
+width: 50%;
+float: left;
+margin-left: 6%;
+margin-top: 5%;
+}
+.Illustrator.imagebox3{
+width: 45%;
+float: left;
+margin-left: 6%;
+margin-top: 5%;
+}
+.Illustrator.imagebox4{
+clear: both;
+display: block;
+width:100%;
+margin-left:2%;
+margin-top: 11%;
+padding-bottom: 5%;
+}
+.Illustrator.imagebox5{
+width: 60%;
+float: left;
+margin-top: 5%;
+}
+.Illustrator.imagebox6{
+width: 100%;
+margin-top: 5%;
+}
+h1.caption{
+	font-size:2em;
+	padding:3%;
+	background-color:#373737;
+	margin-top:-11%;
+	width:40%;
+}
+.seriesImg{
+	float:left;
+}
+img.img-center{
+margin: 0 auto;
+}
+/****slider *****/
+#sliderBox{
+	width:38%;
+	margin-top:12%;
+}
+.slider {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  margin-top:10%;
+
+}
+.slider div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+/*******  END Slider styles  ********/
+
+/****** Logo and visual storytelling ********/
+.Logo img{
+margin: 0 auto;
+}
+.logobox{
+width: 45%;
+float: left;
+
+}
+.logobox2_3{
+clear:both;
+width:100%;
+margin-top: 5%;
+}
+.logobox3_3{
+clear:both;
+width:100%;
+padding-top: 5%;
+}
+.logobox2{
+float: left;
+width:33.3%;
+}
+.logobox3{
+width:33.3%;
+float: left;
+	
+}
+.logobox4{
+float: left;
+width:33.3%;
+
+}
+.visualbox{
+display: block;
+clear: both;
+width:90%;
+margin: 0 auto;
+padding-top:5%;
+}
+.visualbox img{
+margin: 0 auto;
+}
+
+/********end logo page *********/
+
+
+
+/********Strategic Planning page styles *********/
+.projectInfoTabs{
+float:left;
+width:100%;
+margin: 0 auto;
+margin-top: 5%;
+}
+.nav-tabs {
+    border-bottom: 1px solid #666;
+	}
+.nav-tabs > li {
+    font-size: 1.8em;
+	font-weight: bold;
+	}
+	.nav-tabs > li > a:hover {
+    background-color: black;
+	color:#fff;
+   
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: #000;
+    border: 1px solid #666;
+	border-bottom-color: transparent;
+}
+#makerFaireImg{
+	margin: 0 auto;
+	padding-top:3%;
+}
+.keyfindingsimg{
+	width:80%;
+
+}
+.primaryresearch1img{
+width:35%;
+float:left;
+margin-left:7%;
+}
+.primaryresearch2img{
+float:left;
+margin-left: 5%;
+}
+.primaryresearch3img{
+clear:both;
+float: right;
+margin-right: 5%;
+width: 44%;
+margin-top: 5%;
+}
+.primaryresearch4img{
+float:left;
+margin-left: 5%;
+margin-top: 5%;
+}
+.Tactic1img{
+width:50%;
+float:left;
+}
+.Tactic2img{
+margin: 0 auto;
+}
+.printadimg{
+margin: 0 auto;
+}
+.makerfaireImg {
+	width:90%;
+	padding-top: 3%;
+	margin: 0 auto;
+	margin-top:3%;
+	background: #000;
+	overflow: hidden;
+}
+.tab-content p{
+width:70%;
+margin:0 auto;
+padding-top:3%;
+font-size: 1.65em;
+font-family: 'News Cycle', sans-serif;
+color: #000;
+line-height: 1.5;
+}
+.tab-content p.objective{
+font-size: 1.9em;
+}
+.tab-content p.tactic{
+padding-left: 3%;
+}
+p.caption{
+clear: both;
+padding-top: 3%;
+padding-bottom: 3%;
+font-size: 1.65em;
+font-family: 'News Cycle', sans-serif;
+color: #fff;
+text-align: center;
+}
+.tab-content h1{
+text-align: center;
+font-weight: bold;
+font-size: 2.5em;
+font-family: 'News Cycle', sans-serif;
+color: #fff;
+background: #000;
+width: 50%;
+margin: 0 auto;
+margin-top: 3%;
+margin-bottom: 3%;
+padding: 3%;
+}
+p.sources{
+	font-size:1.4em;
+	font-style:italic;
+	padding-left:3%;
+	padding-top:2%;
+}
+/* ************I-Frame - Prezi/YouTube styles *************/
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.jp-video-270p {
+    margin: 0 auto;
+}
+.col2ImageBoxCenter img{
+	max-width:100%;
+}
+ .col2ImageBoxCenter{
+ width: 60%;
+	 margin: 0 auto;
+	/*width: 93%; */
+	/*position: relative;
+	left: auto;
+	right: auto;*/
+	font-size: 1em;
+	color: #333333;
+	text-align: center;
+	margin-top:5%;
+	margin-bottom:5%;
+	padding: 1.5%;
+	border: thin solid #827969;
+	background-color:rgba(229, 226, 218,.7);
+}
+.col2ImageBoxCenter p{
+	/*width: 100%;	/*to override 75% width*/
+	text-align: center;
+	font-size:1.7em;
+	padding-top:5%;
+}
+
+/**********JPlayer Audio *******************/
+
+#audioContainer{
+display: block;
+margin-top: 10%;
+width: 100%;
+overflow: hidden;
+}
+#jp_container_2{
+}
+
+
+/********end strategic planning page *********/
+
+
+/*******  Footer styles  ************/
+
+
+footer {
+    padding: 100px 0;
+	font-size:1.8em;
+	color:#000;
+}
+footer p, footer h4, footer a{
+color:#000;
+}
+.text-info {
+    color: #000;
+}
+.text-muted {
+    color: #666;
+}
+a:focus, a:hover {
+    color: #666;
+    text-decoration: underline;
+	
+}
+/*******  Form styles  ************/
+
+#contactForm label{
+font-size:1.8em;
+font-family: 'News Cycle', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: normal;
+}
+ h1.contactHeader{
+font-family: 'Gill Sans MT';
+color: #fff;
+font-size: 3.4em;
+font-weight: bold;
+background-color: #000;
+padding: 4%;
+margin-bottom:7%;
+}
+
+
+.cartoon{
+	width:100%;
+	margin: 0 auto;
+	}
+#cartoon{
+	margin: 0 auto;
+	}
+.portrait{
+	width:100%;
+	}
+#portrait{
+	margin: 0 auto;
+}
+.resume{
+float:left;
+}
+.resumeBox{
+margin: 0 auto;
+margin-top:5%;
+width: 60px;
+}
+.socialLinks{
+margin-top: 5%;
+display: block;
+padding-bottom: 15%;
+}
+.socialLinks a{
+width: 41px;
+    height: 41px;
+    float: left;
+	display: block;
+	margin-left:1%;
+    background-image: url("../images/socialIcons.png");
+    background-repeat: no-repeat;
+}
+.portfolio{
+	width:375px;
+	height:375px;
+	margin: 0 auto;
+	margin:5% auto 0 auto;
+	overflow:hidden;
+	}
+	
+/********  view website  *********/
+.homeImg:hover {
+background-color: black;
+background: cover;
+    opacity:.9;
+}
+.viewWebsite{
+float:left;
+padding-top: 7%;
+width:100%;
+}
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	border-right:10px solid #231F20; 
+	float:left;
+	margin-top: 43px;
+	margin-top: 2%;
+	margin-right: 10px;
+}
+#view{
+	width:18%;
+	float:left;
+	padding-top: 3%;
+	margin-right: 3%;
+}
+.viewWebsite p{
+	font-size: 2em;
+	padding:0;
+}
+.viewText{
+	margin-top: 8%;
+}
+/**** end view website ****/
+
+	/****************Media Queries************/
+@media only screen and (max-device-width: 1200px), only screen and (max-width: 1200px) {
+.portfolio{
+	width:320px;
+	height:320px;
+	}
+}
+.webProject1{
+	background:url(../img/portfolio/web_sweetNothings.png);
+	background-size:cover;
+	}
+.webProject2{
+	background:url(../img/portfolio/web_WJP.png);
+	background-size:cover;
+	}
+/*.webProject3{
+	background:url(../img/portfolio/web_JoCoMoveOnLogo.png);
+	background-size:cover;
+	}*/
+/*.webProject3{
+	background:url(../img/portfolio/web_SSWM.png);
+	background-size:cover;
+	}
+.webProject4{
+	background:url(../img/portfolio/web_PetroleumSciCorp.png);
+	background-size:cover;
+	}
+.webProject5{
+	background:url(../img/portfolio/web_SoftScienceGroupLogo3.png);
+	background-size:cover;
+	}
+.webProject6{
+	background:url(../img/portfolio/web_MissionPawn.png);
+	background-size:cover;
+	}
+.webProject7{
+	background:url(../img/portfolio/design_cssZenGardens.png);
+	background-size:cover;
+	}
+.webProject8{
+	background:url(../img/portfolio/design_photoshop.png);
+	background-size:cover;
+	}
+.webProject9{
+	background:url(../img/portfolio/design_logos_Illustrations.png);
+	background:url(../img/portfolio/design_logos_Illustrations2.png);
+	background-size:cover;
+	}
+.webProject10{
+	background:url(../img/portfolio/planning_kizerCummings.png);
+	background-size:cover;
+	}
+.webProject11{
+	background:url(../img/portfolio/planning_duckBrand.png);
+	background-size:cover;
+	}
+.webProject12{
+	background:url(../img/portfolio/planning_MakerFaire.png);
+	background:url(../img/portfolio/planning_MakerFaire2.png);
+	background:url(../img/portfolio/planning_MakerFaire3.png);
+	background-size:cover;
+	}
+.overlay{  
+	background:rgba(0,0,0,.55);
+	text-align:center;
+	padding: 150px 0 166px 0;
+	opacity:0;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	
+}
+.webProject1:hover .overlay, .webProject2:hover .overlay, .webProject3:hover .overlay,.webProject4:hover .overlay,.webProject5:hover .overlay,.webProject6:hover .overlay,.webProject7:hover .overlay,.webProject8:hover .overlay,.webProject9:hover .overlay,.webProject10:hover .overlay,.webProject11:hover .overlay,.webProject12:hover .overlay {
+    opacity:1;
+}
+
+.plus{  
+	font-family:'Gill Sans MT';
+	color:rgba(255,255,255,.85);
+	font-size:3em;
+	font-weight:bold;
+	}
+.plus p{
+	padding-bottom: 10px;
+	
+	}
+ a {
+    text-decoration: none;
+}
+
+
+/**************Responsive ********************/
+@media only screen and (max-device-width: 973px), only screen and (max-width: 973px) {
+.overlay{  
+	opacity:.8;
+}
+}
+@media only screen and (max-device-width: 915px), screen and (max-width: 915px) {
+	.projectInfo {
+    width: 100%;
+    float: none;
+}
+.homeImg {
+	float:none;
+    width: 90%;
+	margin: 0 auto;
+}
+.zenGardens{
+	margin-top:5%;
+}
+.zenGardensInfo{
+	margin-top:3%;
+}
+.projectInfo h1{
+	text-align: center;
+}
+.projectInfo p {
+    padding-left: 8%;
+	}
+p.textBody {
+    padding-left: 0;
+    padding-right: 0;
+	}
+	.quoteBox {
+    width: 100%;
+	}
+.viewWebsite{
+width:60%;
+	margin-left: 8%;
+	padding-top:0;
+	}
+#view{
+	width:70px;
+	}
+.arrow-left {
+	margin-top: .5%;
+}
+.viewText{
+margin-top: 38px;
+}
+.viewWebsite p {
+    font-size: 1.7em;
+	}
+h1.caption {
+    margin-top: -13%;
+	}
+.Illustrator.seriesImages{
+	width: 550px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top:5%;
+}
+#sliderBox {
+	clear: both;
+	width: 250px;
+    margin: 0 auto;
+	padding-top: 7%;
+	}
+.Illustrator.imagebox {
+	clear: both;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-left: 3%;
+	}
+.Illustrator.imagebox5 {
+	clear: both;
+    width: 90%;
+	margin: 0 auto;
+	}
+.Illustrator.imagebox6 {
+    width: 90%;
+    margin: 0 auto;
+	
+}
+.logobox {
+    float: none;
+    margin: 0 auto;
+	}
+}
+@media only screen and (max-device-width: 820px), screen and (max-width: 820px) {
+p.textBody {
+    padding-left: 8%;
+    padding-right: 8%;
+	}
+h1.caption {
+    display: none;
+	}
+.Illustrator.imagebox {
+    width: 55%;
+	margin-left: 6%;
+	}
+.Illustrator.imagebox2 {
+    width: 75%;
+	}
+.Illustrator.imagebox3 {
+    width: 55%;
+	}
+}
+@media only screen and (max-device-width: 700px), screen and (max-width: 700px) {
+.logobox {
+width: 70%;
+}
+.logos{
+float: none;
+margin: 0 auto;
+margin-top:1%;
+width: 246px;
+}
+.logobox3_3, .logobox2_3 {
+padding-top:0;
+}
+}
+@media only screen and (max-device-width: 570px), screen and (max-width: 570px) {
+.webSection, .designSection, .planningSection {
+    font-size: 3em;
+	}
+}
+
+@media only screen and (max-device-width: 510px), screen and (max-width: 510px) {
+.sideNavbarBox {
+    height: auto;
+	}
+.sideNavbar li {
+    margin-top: -15px;
+}
+.sideNavbar a:link, .sideNavbar a:visited {
+	width:100%;
+}
+.sideNavbar li {
+    margin-top: 0px;
+}
+img.large{
+	padding-top: 8%;
+}
+#portrait {
+    padding-top: 10%;
+	}
+.portfolio_container {
+    padding-top: 10%;
+	}
+.homeImg {
+    margin-bottom: 10%;
+	}
+.zenGardens {
+    margin-top: 12%;
+}
+.projectInfo h1 {
+    font-size: 3.1em;
+	}
+.col-md-6 {
+    margin-top: 25%;
+}
+.Illustrator.seriesImages {
+width: 260px;
+}
+.seriesImg.cb{
+clear:both;
+}
+
+}
+@media only screen and (max-device-width: 412px), screen and (max-width: 412px) {
+.col-md-6 {
+    margin-top: 36%;
+}
+.viewWebsite {
+    width: 100%;
+	}
+}
+@media only screen and (max-device-width: 380px), screen and (max-width: 380px) {
+img.small{
+	display: block;
+	padding-top: 10%;
+}
+img.large{
+	display: none;
+}
+.projectInfo h1 {
+    font-size: 2.7em;
+}
+h1.contactHeader {
+    margin-bottom: 14%;
+}
+#contactForm label {
+    font-family: 'News Cycle', sans-serif;
+}
+}
+@media only screen and (max-device-width: 340px), screen and (max-width: 340px) {
+h1.logoText{
+	font-size: 6em;
+}
+
+.portfolio {
+    width: 300px;
+    height: 300px;
+}
+
+}
