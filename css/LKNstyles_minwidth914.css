@@ -36,6 +36,9 @@ text-decoration: none;
 a:-webkit-any-link :hover{
 text-decoration: none;
 }
+.img-responsive.center{
+  margin: 0 auto;
+}
 p.textBody {
 	color: #2c2c2e;
 	font-family: 'News Cycle', sans-serif;
@@ -151,6 +154,7 @@ h1.logoText{
 .col-md-6{
 	padding-top: 2%;
 }
+
 #homeSlide{
 	margin: 0px auto;
 width: 95%;
@@ -226,6 +230,9 @@ overflow: auto;
 	padding-bottom: 20%;
 	overflow: hidden;
 }
+.portfolio_container.topNone {
+    padding-top: 0;
+  }
 .design{
 	padding-top:0;
 }
@@ -272,50 +279,101 @@ line-height: 1.5;
 .projectInfo p.info {
 font-size: 1.5em;
 }
-.imageContainer2{
+.imageContainer{
 display: block;
 clear: both;
 width: 100%;
 padding-top: 5%;
+padding-left: 3px;
+padding-right: 3px;
 }
-.Illustrator.imagebox{
-width: 38%;
-float: left;
-margin-left: 3%;
-margin-top: 5%;
 
-}
-.Illustrator.imagebox2{
-width: 50%;
+
+.Illustrator.imagebox{
+width: 40%;
+height: 85%;
 float: left;
-margin-left: 6%;
-margin-top: 5%;
+background-image: url("../img/portfolio/Photoshop/postcard_LindsayNeal1.jpg");
+background-size: cover;
+border: 3px solid rgb(255,255,255);
+cursor: pointer;
+}
+
+.Illustrator.imagebox2{
+width: 60%;
+height: 85%;
+float: left;
+background-image: url("../img/portfolio/Photoshop/KansasCityProject_LNeal_1000x700.jpg");
+background-size: cover;
+background-position: center;
+border: 3px solid rgb(255,255,255);
+cursor: pointer;
 }
 .Illustrator.imagebox3{
-width: 45%;
+width: 60%;
+height: 85%;
 float: left;
-margin-left: 6%;
-margin-top: 5%;
+background-image: url("../img/portfolio/Photoshop/LNeal_AlbumCoverFinal_900x900.jpg");
+background-size: cover;
+border: 3px solid rgb(255,255,255);
+cursor: pointer;
 }
 .Illustrator.imagebox4{
-clear: both;
-display: block;
-width:100%;
-margin-left:2%;
-margin-top: 11%;
-padding-bottom: 5%;
+width: 40%;
+height: 85%;
+float: left;
+background-image: url("../img/portfolio/Photoshop/Lneal_TourPosterFinal_750x971.jpg");
+background-size: cover;
+border: 3px solid rgb(255,255,255);
+cursor: pointer;
 }
+
 .Illustrator.imagebox5{
-	width:60%;
-	float: left;
-	margin-top: 5%;
+width: 33.3%;
+height:80%;
+float: left;
+background-image: url("../img/portfolio/Photoshop/Bloom.gif");
+cursor: pointer;
+background-repeat: no-repeat;
+background-position: center;
 }
 .Illustrator.imagebox6{
-	width: 100%;
-	padding-top: 5%;
-	display: block;
-	clear: both;
+width: 33.3%;
+height:80%;
+float: left;
+background-image: url("../img/portfolio/Photoshop/loadingHouse_orange.gif");
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
 }
+.Illustrator.imagebox7{
+width: 33.3%;
+height:80%;
+float: left;
+background-image: url("../img/portfolio/Photoshop/HelloPencil.gif");
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+}
+
+.overlayHover {
+  position: relative;
+}
+
+.overlayHover:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:1;
+}
+
+.overlayHover:hover:after  {
+  background-color: rgba(0,0,0,.5);
+}
+
 h1.caption{
 	font-size:2em;
 	padding:3%;
@@ -339,26 +397,27 @@ margin: 0 auto;
 }
 /****slider *****/
 #sliderBox{
-	width:38%;
-	float:left;
+	width:100%;
 }
 .slider {
+		width:25%;
   max-width: 300px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
+  	float:left;
   margin-top:10%;
 
 }
-.slider div {
-  background-color: white;
-  width: 100%;
-  display: inline-block;
-  display: none;
-}
+
 .slider img {
   width: 100%;
   height: auto;
+}
+.Illustrator.imageBoxCenter{
+width:100%;
+}
+.Illustrator.imageBoxCenter img{
+	max-width:100%;
+	margin:0 auto;
+
 }
 
 /*** END Slider styles ********/
@@ -368,19 +427,14 @@ margin: 0 auto;
 margin: 0 auto;
 }
 .logobox{
-width: 45%;
-float: left;
+width: 60%;
+margin: 0 auto;
 
 }
 .logobox2_3{
 clear:both;
-width:100%;
-margin-top: 5%;
-}
-.logobox3_3{
-clear:both;
-width:100%;
-padding-top: 5%;
+width:60%;
+margin:0 auto;
 }
 .logobox2{
 float: left;
@@ -417,21 +471,34 @@ margin: 0 auto;
 margin-top: 5%;
 }
 .nav-tabs {
-    border-bottom: 1px solid #666;
+	border-bottom: 1px solid #7F7E7F;
 	}
 .nav-tabs > li {
-    font-size: 1.8em;
-	font-weight: bold;
+font-size: 1.8em;
+font-family: 'LATO_LITE';
 	}
-	.nav-tabs > li > a:hover {
-    background-color: black;
-	color:#fff;
+.nav-tabs > li > a {
+  color: #fff;
+  background-color: #000;
+}
+.nav-tabs > li > a:hover {
+  background-color: #fff;
+	color:#000;
+	border: 1px solid #7F7E7F;
+  border-bottom: 1px solid #7F7E7F;
    
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
     color: #000;
-    border: 1px solid #666;
-	border-bottom-color: transparent;
+    border: 1px solid #7F7E7F;
+	  border-bottom-color: transparent;
+}
+.tabIcon{
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 90px;
+}
+
 }
 #makerFaireImg{
 	margin: 0 auto;
@@ -475,20 +542,26 @@ margin: 0 auto;
 .makerfaireImg {
 	width:90%;
 	padding-top: 3%;
+  padding-bottom: 10%;
 	margin: 0 auto;
 	margin-top:3%;
 	background: #000;
 	overflow: hidden;
 }
+.tab-content{
+  padding-bottom: 10%;
+}
+
 .tab-content p{
 width:70%;
 margin:0 auto;
 padding-top:3%;
-font-size: 1.65em;
+font-size: 1.9em;
 font-family: 'News Cycle', sans-serif;
 color: #000;
 line-height: 1.5;
 }
+
 .tab-content p.objective{
 font-size: 1.9em;
 }
@@ -506,19 +579,16 @@ text-align: center;
 }
 .tab-content h1{
 text-align: center;
-font-weight: bold;
-font-size: 2.5em;
-font-family: 'News Cycle', sans-serif;
-color: #fff;
-background: #000;
-width: 50%;
+font-size: 3.5em;
+font-family: 'LATO_LITE';
+color: #000;
+background: #fff;
 margin: 0 auto;
-margin-top: 3%;
-margin-bottom: 3%;
 padding: 3%;
 }
+
 p.sources{
-	font-size:1.4em;
+	font-size: 1.6em;
 	font-style:italic;
 	padding-left:3%;
 	padding-top:2%;
@@ -666,6 +736,44 @@ width: 41px;
 	margin:5% auto 0 auto;
 	overflow:hidden;
 	}
+.siteMap{
+	width:100%;
+	clear: both;
+	}
+.sectionMap{
+	width:33.3%;
+	float:left;
+	}
+.sectionMap h1{
+font-family: 'LATO_BOLD';
+font-weight:bold;
+text-align: center;
+background: black;
+color: #fff;
+padding: 5%;
+border: solid 3px #fff;
+
+}
+.colMap{
+	overflow:hidden;
+	width:100%;
+
+}
+.rowMap{
+  display: block;
+width: 300px;
+margin: 0 auto;
+overflow: hidden;
+}
+.map{
+  float:left;
+  width:100px;
+  height:100px;
+  margin: 0 auto;
+  margin:5% auto 0 auto;
+  overflow:hidden;
+  }
+
 	/****************Media Queries************/
 }
 @media only screen and (max-device-width: 1200px), only screen and (max-width: 1200px) {
@@ -673,6 +781,7 @@ width: 41px;
 	width:320px;
 	height:320px;
 	}
+
 }
 .webProject1{
 	background:url(../img/portfolio/web_sweetNothings.png);
@@ -808,29 +917,14 @@ width:100%;
 	}
 }
 @media only screen and (max-device-width: 1055px), only screen and (max-width: 1055px) {
-.Illustrator.imagebox2 {
-    width: 50%;
-    margin-left: 3%;
-    padding-top: 5%;
-    clear: both;
-}
-.Illustrator.imagebox {
-    width: 48%;
-    clear: float;
-    padding-top: 5%;
-}
-.Illustrator.imagebox4 {
-	width:50%;
-}
 .Illustrator.seriesImages{
 	width: 550px;
 	overflow: hidden;
 }
-#sliderBox {
-    clear: both;
-    padding-top: 4%;
-    float: right;
-}
+.sectionMap h1 {
+	font-size:3em;
+	}
+
 }
 @media only screen and (max-device-width: 995px), only screen and (max-width: 995px) {
 	p.textBody {
@@ -843,6 +937,78 @@ width:100%;
 	opacity:.8;
 }
 }
+@media only screen and (max-device-width: 915px), screen and (max-width: 915px) {
+		.projectInfo {
+    width: 100%;
+    float: none;
+}
+.homeImg {
+	float:none;
+    width: 90%;
+	margin: 0 auto;
+}
+.zenGardens{
+	margin-top:5%;
+}
+.zenGardensInfo{
+	margin-top:3%;
+}
+.projectInfo h1{
+	text-align: center;
+}
+.projectInfo p {
+    padding-left: 8%;
+	}
+p.textBody {
+    padding-left: 0;
+    padding-right: 0;
+	}
+	.quoteBox {
+    width: 100%;
+	}
+.viewWebsite{
+width:60%;
+	margin-left: 8%;
+	padding-top:0;
+	}
+#view{
+	width:70px;
+	}
+.arrow-left {
+	margin-top: .5%;
+}
+.viewText{
+margin-top: 38px;
+}
+.viewWebsite p {
+    font-size: 1.7em;
+	}
+h1.caption {
+    margin-top: -13%;
+	}
+.Illustrator.seriesImages{
+	width: 550px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top:5%;
+}
+.logobox {
+    float: none;
+    margin: 0 auto;
+	}
+.rowMap {
+  display: block;
+  width: 225px;
+ }
+.map{
+  width:75px;
+  height:75px;
+}
+.sectionMap h1 {
+    font-size: 2em;
+}
+}
+
 @media only screen and (max-device-width: 500px), screen and (max-width: 500px) {
 .sideNavbar li {
     margin-top: -15px;

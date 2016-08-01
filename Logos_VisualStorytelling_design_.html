@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" media="(min-width:914px)" href="css/LKNstyles_minwidth914.css"/>
 	<link rel="stylesheet" media="(max-width:915px)" href="css/LKNstyles_maxwidth915.css"/>
-	
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<!--<script>
 	$(function () {
     $('.sideNavbar img').hover( function () {
@@ -49,10 +49,8 @@
 		
 	</div>
 	<div class="containerInner">
-		<div class="portfolio_container topNone">
-        <div class="designImg">
-          <img src="img/portfolio/portfolioInfo/storytelling_banner.png" id="logo" class="img-responsive" alt="Responsive image"/>
-        </div>
+		<div class="portfolio_container">
+			<div class="imageContainer">
 				<div class="projectInfo">
 					<h1>Logos</h1>
 					
@@ -60,20 +58,27 @@
 					I enjoy graphic design oriented tasks such as logo creation. I designed logos for Outlaw Economist, Working Journalist Press, Kansas Pawn Association, Mission Pawn and Sweet Nothings Cakes.
 					</p>
 				</div><!--end projectInfo-->
-    <div class="imageContainer">
-					 <div class="Logo logobox2_3">
+
+					<div class="Logo logobox">
+						<img src="img/portfolio/Logos/Outlaw-economics-logo.jpg" class="img-responsive" alt="Responsive image"/>
+						
+					</div>
+					<div class="Logo logobox2_3">
 						<div class="logos logobox2">
 							<img src="img/portfolio/Logos/WorkingJournalistPressLogo2b.png" class="img-responsive" alt="Responsive image"/>
 						</div>
+						
 						<div class="logos logobox3">
 							<img src="img/portfolio/Logos/kansas-pawn-association-logo.png" class="img-responsive" alt="Responsive image"/>
+							
 						</div>
 						<div class="logos logobox4">
 							<img src="img/portfolio/Logos/mission-pawn-logo.png" class="img-responsive" alt="Responsive image"/>
+							
 						</div>
-					 </div>
+					</div>
 					
-					<div class="Logo logobox2_3">
+					<div class="Logo logobox3_3">
 						<div class="logos logobox2">
 							<img src="img/portfolio/Logos/sweet-nothings-cakes-logo.png" class="img-responsive" alt="Responsive image"/>
 						</div>
@@ -87,15 +92,12 @@
 							
 						</div>
 					</div>
-          <div class="Logo logobox">
-            <img src="img/portfolio/Logos/Outlaw-economics-logo.jpg" class="img-responsive" alt="Responsive image"/>
-          </div>
 					
 					
 				
 			</div><!--end imageContainer-->
 			
-			<div class="imageContainer">
+			<div class="imageContainer2">
 				<div class="projectInfo">
 					<h1>Visual Storytelling</h1>
 					
@@ -107,11 +109,7 @@
 				<div class="storytelling visualbox">
 					<img src="img/portfolio/Logos/visualstorytelling-cartoon.png" class="img-responsive" alt="Responsive image"/>
 				</div>
-        <a href="https://www.facebook.com/lindsay.neal.14" target="_blank" class="facebook" title="Add me on Facebook.">
-
-        <a href="http://petrosci.com/softPetroleumAppraiser.html" target="_blank" class="facebook" title="Kansas Property Tax Solutions - eBrochure"><div class="storytelling visualbox">
-          <img src="img/portfolio/Logos/PSC_KSPropTaxSolutions_eBrochure-pg1_cr_600x447.jpg" class="img-responsive" alt="e-brochure"/>
-        </div></a>
+				
 				
 				<div class="col2ImageBoxCenter imageBoxCenter imageBoxFullWidth">
 						<div class="video-container">					
@@ -122,62 +120,6 @@
 				</div>
 				
 			</div>
-
-      <div class="siteMap">
-        <div class="sectionMap">
-          <h1>WEB</h1>
-          <div class="colMap">
-          <div class="rowMap">
-            <a href="sweetnothingscakery_web.html"><div class="webProject1 map"><div class="overlay"></div>
-            </div></a>
-            <a href="workingjournalistpress_web.html"><div class="webProject2 map"><div class="overlay"></div>
-            </div></a>
-            <a href="softsciencewebmedia_web.html"><div class="webProject3 map"><div class="overlay"></div>
-            </div></a>
-          </div>
-          </div>
-
-          <div class="colMap">
-          <div class="rowMap">
-            <a href="petrosci_web.html"><div class="webProject4 map"><div class="overlay"></div>
-            </div></a>
-            <a href="missionPawn_web.html"><div class="webProject6 map"><div class="overlay"></div>
-            </div></a>
-            <a href="softsciencegroup_web.html"><div class="webProject5 map"><div class="overlay"></div>
-            </div></a>
-          </div>
-          </div>
-        </div>
-        
-        <div class="sectionMap">
-          <h1>DESIGN</h1>
-          <div class="colMap">
-          <div class="rowMap">
-            <a href="cssZenGardens_design.html"><div class="webProject7 map"><div class="overlay"></div>
-            </div></a>
-            <a href="Illustrator_Photoshop_design.html"><div class="webProject8 map"><div class="overlay"></div>
-            </div></a>
-            <a href="Logos_VisualStorytelling_design.html"><div class="webProject9 map"><div class="overlay"></div>
-            </div></a>
-          </div>
-          </div>
-        </div>
-        
-        <div class="sectionMap">
-          <h1>COMMUNCATION</h1>
-          <div class="colMap">
-            <div class="rowMap">
-              <a href="makerFaire_strategic-planning.html"><div class="webProject12 map"><div class="overlay"></div>
-              </div></a>
-              <a href="kizerCummings_strategic-planning.html"><div class="webProject10 map"><div class="overlay"></div>
-              </div></a>
-              <a href="DuckBrand_strategic-planning.html"><div class="webProject11 map"><div class="overlay"></div>
-              </div></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
 		</div>
 		
 	</div>
@@ -206,7 +148,7 @@
 	
 
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 	 <script src="js/styles_LKN.js"></script>
